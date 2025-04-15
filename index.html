@@ -12,103 +12,45 @@
         });
       </script>
         <style>
-            .site{
-                width:940px;
-                height:600px;
-            }
-            .header{
-                width:938px;
-                height:47px;
-                background-image:url("https://img.freepik.com/premium-vector/daisies-petals-pink-background-seamless-pattern-chamomile-flowers_345837-850.jpg?semt=ais_hybrid");
-            }
-            .main{
-                width:938px;
-                height:500px;
-            }
-            .footer{
-                width:938px;
-                height:40px;
-                background-image:url("https://img.freepik.com/premium-vector/daisies-petals-pink-background-seamless-pattern-chamomile-flowers_345837-850.jpg?semt=ais_hybrid");
-            
-            }
-            .esquerda{
-                width:60px;
-                height:500px;
-                display:inline-block;
-                float:right;
-                background-image:url("https://img.freepik.com/premium-vector/daisies-petals-pink-background-seamless-pattern-chamomile-flowers_345837-850.jpg?semt=ais_hybrid");
-            }
-             .centro{  
-                width:800px;
-                height:500px;
-                display:inline-block;
-                float:right; 
-                background-image:url("https://i.pinimg.com/originals/eb/fb/8a/ebfb8ad22ec1a5c941b3a9e79508a9dc.gif")
-             }
-              .direita{
-                width:66px;
-                height:500px;
-                display:inline-block;
-                float:right; 
-                background-image:url("https://img.freepik.com/premium-vector/daisies-petals-pink-background-seamless-pattern-chamomile-flowers_345837-850.jpg?semt=ais_hybrid");
-              }
+        
                  </style> 
-     
-  </head>
- <body>
-    <div class="site">
-        <div class="header">
-
-        </div>
-        <div class="main">
-            <div class="esquerda">
-    
-            </div>
-                <div class="centro">
+                 </head>
+                 <body>
+ 
                   <fieldset>
                     <legend>CALCULADORA</legend>
-                       <input type="number" id="campo">
+                       <input type="text" id="visor">
                    </br></br>
-                       <button id="btn_um">1</button>
-                       <button id="btn_dois">2</button>
-                       <button id="btn_tres">3</button>
-                       <button id="btn_adicao">+</button>
-                       <button id="btn_porcentagem">%</button>
+                       <button id="btn_um" onclique="adicionar('1')">1</button>
+                       <button id="btn_dois" onclique="adicionar('2')">2</button>
+                       <button id="btn_tres" onclique="adicionar('3')">3</button>
+                       <button id="btn_adicao" onclique="adicionar('+')">+</button>
+                       <button id="btn_porcentagem" onclique="adicionar('%')">%</button>
                     </br></br>
-                       <button id="btn_quatro">4</button>
-                       <button id="btn_cinco">5</button>
-                       <button id="btn_seis">6</button>
-                       <button id="btn_subtracao">-</button>
-                       <button id="btn_potencia">^</button>
+                       <button id="btn_quatro" onclique="adicionar('4')">4</button>
+                       <button id="btn_cinco" onclique="adicionar('5')">5</button>
+                       <button id="btn_seis" onclique="adicionar('6')">6</button>
+                       <button id="btn_subtracao" onclique="adicionar('-')">-</button>
+                       <button id="btn_potencia" onclique="adicionar('^')">^</button>
                     </br></br>
-                       <button id="btn_sete">7</button>
-                       <button id="btn_oito">8</button>
-                       <button id="btn_nove">9</button>
-                       <button id="btn_divisao">/</button>
-                       <button id="btn_pa">(</button>
+                       <button id="btn_sete" onclique="adicionar('7')">7</button>
+                       <button id="btn_oito" onclique="adicionar('8')">8</button>
+                       <button id="btn_nove" onclique="adicionar('9')">9</button>
+                       <button id="btn_divisao" onclique="adicionar('/')">/</button>
+                       <button id="btn_pa" onclique="adicionar('')">(</button>
                     </br></br>
-                       <button id="btn_ponto">.</button>
-                       <button id="btn_zero">0</button>
-                       <button id="btn_virgula">,</button>
-                       <button id="btn_multiplicacao">×</button>
-                        <button id="btn_pf">)</button>
+                       <button id="btn_ponto" onclique="adicionar('.')">.</button>
+                       <button id="btn_zero" onclique="adicionar('0')">0</button>
+                       <button id="btn_virgula" onclique="adicionar(',')">,</button>
+                       <button id="btn_multiplicacao" onclique="adicionar('*')">x</button>
+                        <button id="btn_pf" onclique="adicionar('')">)</button>
                     </br></br>
-                       <button id="btn_limpar">C</button>
-                       <button id="btn_igual">=</button>
+                       <button id="btn_limpar" onclique="Limpar()">C</button>
+                       <button id="btn_igual" onclique="calcular()">=</button>
                   </br></br>
                   </fieldset>
-
-                </div>
-                <div class="direita">
-
-                </div>
-    </div>
-        <div class="footer">
-
-        </div>
-      </div>
- </body>
-</html>
+                  </body>
+                  </html>
 
 
 
