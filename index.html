@@ -15,6 +15,16 @@
      document.getElementById('visor').value = '';
 
     }
+   //calcular
+     function (){
+     var visor = document.getElementById('visor');
+     try{
+     visor.value = eval(visor.value);
+     }
+     catch(error){
+     visor.value = 'Erro';
+     }
+     }
     </script>
     <style>
     /*botao muda o estilo dos numeros*/
