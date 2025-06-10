@@ -1,1 +1,78 @@
+// comando "//" cria comentarios.
+// comentarios servem para deixar codigos organizados
+
+//javascript é case sensitive (diferencia letras maiuscula de letras minusculas)
+
+//variaveis servem para armazzenar informacoes.
+//elas são organizadas em string, int, boolean, etc.
+//comando que cria variaveis é o let, porém é possivel tambem usar o "const".
+// para mostrar alguma coisa na tela, é usado o codigo "console.log();"
+
+let idade = "dezessete anos";
+let complemento = " de idade";
+console.log(idade+complemento); 
+
+// variaveis do tipo inteiro
+let altura = 160;
+altura += 10;
+
+console.log(altura);
+
+// variaveis do tipo booleano
+let numero1 = 10;
+let numero2 = 9;
+let numero3 = 10;
+
+console.log(numero1===numero3);
+
+// trabalhando com condicionais
+if(numero1==10){
+  console.log("o numero1 vale 10");
+}else{ 
+    console.log("o numero1 é diferente de 10");
+}
+
+
+// Questão1 -> Sabe-se que as pessoas abaixo de 16 anos nao podem votar, as pessoas com idade entre 16 e 18 possuem voto facultativo, as pessoas com idade entre 18 a 70 anos posssuem voto obrigatorio e as pessoas com idade acima de 70 anos tambem possuem voto facultativo. faca um codigo que diga atraves da idade, a condicao de voto dela.
+
+//codigo e = "&&"
+//codigo ou = "||"
+
+
+let idadex = 10;
+
+if(idadex < 16){
+    console.log("Eleitor não pode votar");
+    }else if (idadex >= 16 && idadex < 18 && idadex > 70){
+    console.log("Eleitor possui voto facultativo");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
